@@ -72,7 +72,7 @@ Run the following command from the root of the repository to build the image
 
 .. code-block:: Bash
 
-    docker build -t diyhue:development -f ./.build/Dockerfile --build-args TARGETPLATFORM=amd64 .
+    docker build -t diyhue:development -f ./.build/Dockerfile --build-arg TARGETPLATFORM=amd64 .
 
     # Or the following if you enabled buildx for multi architecture images
     docker build -t diyhue:development -f ./.build/Dockerfile --load .
